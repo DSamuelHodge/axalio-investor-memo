@@ -8,9 +8,12 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "dev:css": "tailwindcss -i ./index.css -o ./index.css --watch",
+    "build:css": "tailwindcss -i ./index.css -o ./index.css --minify"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.16",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
